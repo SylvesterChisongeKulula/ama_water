@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String   @unique
+  password   String
+  created_at          DateTime @default(now())
+  reset_token         String?
+  reset_token_expires DateTime?
+  two_factor_code     String?
+  two_factor_expires  DateTime?
+
+  @@map("users")
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  slug        String   @unique
+  size        String
+  description String
+  price       Float    @default(0)
+  category    String   @default("still")
+  icon        String   @default("lucide:glass-water")
+  in_stock    Int      @default(1)
+  created_at  DateTime @default(now())
+
+  @@map("products")
+}
+
+model WaterQuality {
+  id          Int      @id @default(autoincrement())
+  label       String
+  value       String
+  unit        String   @default("")
+  subtitle    String   @default("")
+  icon        String   @default("lucide:droplets")
+  last_tested DateTime @default(now())
+  sort_order  Int      @default(0)
+
+  @@map("water_quality")
+}
+
+model Setting {
+  key   String @id
+  value String
+
+  @@map("settings")
+}
