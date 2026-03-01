@@ -4,7 +4,20 @@ let _prisma: PrismaClient | null = null
 
 export function useDb(): PrismaClient {
   if (!_prisma) {
+    console.log('🔄 Init: Attempting to connect to the Prisma Database...')
     _prisma = new PrismaClient()
+    
+    // Explicitly test the connection instantly to provide clear feedback
+    _prisma.$connect()
+      .then(() => {
+        console.log('✅ Success: Beautifully connected to the Database!')
+      })
+      .catch((err) => {
+        console.error('❌ FATAL ERROR: Database connection completely failed.')
+        console.error('--> Please check your DATABASE_URL in the .env file or Sevalla settings.')
+        console.error(err.message)
+      })
+
     // Trigger seed or connection if needed, though Prisma connects lazily
     initDb(_prisma).catch(console.error)
   }
