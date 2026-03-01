@@ -6,7 +6,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.2",
