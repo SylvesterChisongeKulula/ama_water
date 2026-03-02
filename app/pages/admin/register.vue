@@ -4,7 +4,8 @@
         <div class="w-full max-w-md">
             <!-- Logo -->
             <div class="text-center mb-8">
-                <img src="~/assets/logo.png" alt="AMA Water Logo" class="w-20 h-20 mx-auto mb-4 object-contain" />
+                <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/logo.png" alt="AMA Water Logo"
+                    class="w-20 h-20 mx-auto mb-4 object-contain" />
                 <h1 class="text-2xl font-heading font-bold text-white">Create an account</h1>
                 <p class="text-slate-400 text-sm mt-1">Register for AMA Water Admin</p>
             </div>

@@ -4,7 +4,8 @@
         <div class="w-full max-w-md">
             <!-- Logo -->
             <div class="text-center mb-8">
-                <img src="~/assets/logo.png" alt="AMA Water Logo" class="w-20 h-20 mx-auto mb-4 object-contain" />
+                <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/logo.png" alt="AMA Water Logo"
+                    class="w-20 h-20 mx-auto mb-4 object-contain" />
                 <h1 v-if="requires2FA" class="text-2xl font-heading font-bold text-white">Security Check</h1>
                 <h1 v-else class="text-2xl font-heading font-bold text-white">Welcome back</h1>
                 <p v-if="requires2FA" class="text-slate-400 text-sm mt-1">Enter the 4-digit code sent to your email</p>
