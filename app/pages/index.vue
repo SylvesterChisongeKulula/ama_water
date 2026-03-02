@@ -41,8 +41,8 @@
                     <div
                         class="w-4/5 sm:w-2/3 lg:w-full max-w-[260px] lg:max-w-sm xl:max-w-md aspect-[4/5] bg-[#E8DCCF] rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden group">
 
-                        <img src="~/assets/bottle-image.png" alt="AMA Water Bottle"
-                            class="w-full h-full object-cover relative z-20" />
+                        <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/bottle-image.png"
+                            alt="AMA Water Bottle" class="w-full h-full object-cover relative z-20" />
 
 
                     </div>

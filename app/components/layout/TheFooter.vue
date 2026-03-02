@@ -5,7 +5,8 @@
                 <!-- Brand -->
                 <div class="md:col-span-1">
                     <div class="flex items-center gap-2 mb-4">
-                        <img src="~/assets/logo.png" alt="AMA Water" class="h-9 w-auto object-contain" />
+                        <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/logo.png" alt="AMA Water"
+                            class="h-9 w-auto object-contain" />
                     </div>
                     <p class="text-sm text-text-light leading-relaxed">
                         Pure, refreshing mineral water sourced from pristine natural springs. Committed to quality,

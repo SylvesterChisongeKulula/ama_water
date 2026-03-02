@@ -27,7 +27,8 @@
                         </p>
                     </div>
                     <div class="aspect-video rounded-2xl overflow-hidden shadow-lg">
-                        <img src="~/assets/about_us.png" alt="About AMA Water" class="w-full h-full object-cover" />
+                        <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/about_us.png" alt="About AMA Water"
+                            class="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>

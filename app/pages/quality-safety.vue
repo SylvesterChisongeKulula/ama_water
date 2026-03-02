@@ -37,7 +37,7 @@
                         <p class="text-sm"
                             :class="entry.subtitle === 'Perfectly Balanced' ? 'text-[#22c55e] italic font-medium' : 'text-slate-400'">
                             {{
-                            entry.subtitle }}</p>
+                                entry.subtitle }}</p>
                     </div>
                 </div>
 
@@ -46,8 +46,8 @@
                     <p class="text-slate-500 italic text-[15px] leading-relaxed mb-8">
                         "{{ qualityQuote }}"
                     </p>
-                    <img src="~/assets/ZABS_Certificate.png" alt="ZABS Certificate"
-                        class="h-24 w-auto object-contain" />
+                    <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/ZABS_Certificate.png"
+                        alt="ZABS Certificate" class="h-24 w-auto object-contain" />
                 </div>
             </div>
         </section>

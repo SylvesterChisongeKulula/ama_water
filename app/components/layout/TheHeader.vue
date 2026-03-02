@@ -4,7 +4,8 @@
         <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <!-- Logo -->
             <NuxtLink to="/" class="flex items-center gap-2 group">
-                <img src="~/assets/logo.png" alt="AMA Water" class="h-14 md:h-16 w-auto object-contain" />
+                <img src="https://sly-moore-klwwx.sevalla.storage/ama_water/logo.png" alt="AMA Water"
+                    class="h-14 md:h-16 w-auto object-contain" />
             </NuxtLink>
 
             <!-- Desktop Nav -->
