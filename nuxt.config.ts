@@ -16,6 +16,14 @@ export default defineNuxtConfig({
       tokensPerInterval: 150,
       interval: 300000,
     },
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': ["'self'", 'data:', 'blob:', 'https://sly-moore-klwwx.sevalla.storage'],
+        'script-src': ["'self'", 'https:', "'unsafe-inline'", "'unsafe-eval'"],
+        'script-src-attr': ["'self'", 'https:', "'unsafe-inline'"],
+        'script-src-elem': ["'self'", 'https:', "'unsafe-inline'"]
+      }
+    }
   },
 
   routeRules: {
